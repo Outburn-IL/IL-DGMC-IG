@@ -21,7 +21,7 @@ Description: "Profile of DGMC Hospital Organization"
 
 * type[moh-institute-type] 0..0
 * type[moh-department-type] 0..0
-* type = http://fhir.dgmc.health.gov.il/cs/nmr-unit-type#HO "בית חולים"
+* type = http://fhir.dgmc.health.gov.il/cs/nmr-ou-type#HO "בית חולים"
 
 * alias 1..1
 

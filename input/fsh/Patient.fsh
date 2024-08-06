@@ -20,9 +20,6 @@ Description: "Profile on IL-Core-Patient by DGMC"
 * extension[hmo].valueCodeableConcept.coding ^slicing.ordered = false
 * extension[hmo].valueCodeableConcept.coding contains nmr 0..1
 * extension[hmo] 1..1
-// * extension[hmo].valueCodeableConcept.coding[hmo].system 1..1
-// * extension[hmo].valueCodeableConcept.coding[hmo].system = "http://fhir.health.gov.il/cs/paying-entity-moh" (exactly)
-// * extension[hmo].valueCodeableConcept.coding[hmo].code 1..1
 // local slice: nmr-hmo - new
 * extension[hmo].valueCodeableConcept.coding[nmr].system 1..1
 * extension[hmo].valueCodeableConcept.coding[nmr].system = "http://fhir.dgmc.health.gov.il/cs/nmr-hmo" (exactly)
@@ -36,8 +33,6 @@ Description: "Profile on IL-Core-Patient by DGMC"
             $extDisability named hearing 0..1 and
             $extNationality named nationality 0..1
 // HL7 extension: gender-identity
-// QUESTION: If the values are fixed to "other" then why slice name is "genderIdentity"?
-//           Seems it should have been something like "otherGender" since it can't be anythong but "other"
 * extension[genderIdentity].valueCodeableConcept.coding.system 1..1
 * extension[genderIdentity].valueCodeableConcept.coding.system = "http://hl7.org/fhir/gender-identity" (exactly)
 * extension[genderIdentity].valueCodeableConcept.coding.code 1..1
@@ -55,19 +50,15 @@ Description: "Profile on IL-Core-Patient by DGMC"
 * extension[hearing].valueCodeableConcept.coding.code 1..1
 * extension[hearing].valueCodeableConcept.coding.code = #15188001 (exactly)
 * extension[hearing].valueCodeableConcept.coding.display 1..1
-* extension[hearing].valueCodeableConcept.coding.display = "Hearing loss" (exactly) // https://github.com/Outburn-IL/IL-DGMC-IG/issues/11
+* extension[hearing].valueCodeableConcept.coding.display = "Hearing loss" (exactly) 
 * extension[hearing].valueCodeableConcept.text 1..1
 * extension[hearing].valueCodeableConcept.text = "כבד שמיעה" (exactly)
 // HL7 extension: nationality
 * extension[nationality].extension[code] 1..1
-
-// QUESTION: Why conding max is * if the system is fixed?
-//          Adding another coding will be impossible since the system cannot be anythong else
 * extension[nationality].extension[code].valueCodeableConcept.coding 1..*
 * extension[nationality].extension[code].valueCodeableConcept.coding.system 1..1
 * extension[nationality].extension[code].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166" (exactly)
 * extension[nationality].extension[code].valueCodeableConcept.coding.code 1..1
-// father name
 
 // local slice: nmr-pat-int-num - new
 * identifier contains nmr-pat-int-num 1..1 and cml-pat-int-num 0..1 and nmr-pat-tmp-num 0..1 and ppn-unknown 0..*

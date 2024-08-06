@@ -1,7 +1,7 @@
 CodeSystem: ConsultationFollowUpFlag
 Id: consultation-follow-up-flag
-Title: "consultation Follow Up Flag"
-Description: "consultation Follow Up Flag"
+Title: "Consultation Follow Up Flag"
+Description: "Consultation Follow Up Flag"
 * insert ConformanceMetadata
 * ^caseSensitive = true
 * ^url = $csFollowUp

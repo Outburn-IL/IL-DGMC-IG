@@ -1,7 +1,7 @@
-ValueSet: UnitClassFlag
-Id: unit-class-flag
-Title: "Unit Classification Flag"
-Description: "Unit Classification Flag Code"
+ValueSet: OuClassFlag
+Id: ou-class-flag
+Title: "OU Classification Flag"
+Description: "Organizational Unit Classification Flag Code"
 * insert ConformanceMetadata
-* ^url = $vsUnitClassFlag
-* include codes from system $csUnitClassFlag
+* ^url = $vsOuClassFlag
+* include codes from system $csOuClassFlag

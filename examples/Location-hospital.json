@@ -36,7 +36,7 @@
         {
             "coding": [
                 {
-                    "system": "http://fhir.dgmc.health.gov.il/cs/nmr-unit-type",
+                    "system": "http://fhir.dgmc.health.gov.il/cs/nmr-ou-type",
                     "code": "HO",
                     "display": "בית חולים"
                 }

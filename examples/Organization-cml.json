@@ -9,7 +9,7 @@
     },
     "identifier": [
         {
-            "system": "http://fhir.shamir.health.gov.il/identifier/cml-unit-code",
+            "system": "http://fhir.shamir.health.gov.il/identifier/cml-ou-code",
             "value": "2"
         }
     ],
@@ -18,7 +18,7 @@
         {
             "coding": [
                 {
-                    "system": "http://fhir.dgmc.health.gov.il/cs/unit-classification-flag",
+                    "system": "http://fhir.dgmc.health.gov.il/cs/ou-classification-flag",
                     "code": "consult",
                     "display": "יחידה מייעצת"
                 }

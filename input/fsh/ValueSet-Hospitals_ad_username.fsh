@@ -3,7 +3,7 @@ Id: hospitals-uris-ad-username
 Title: "Hospitals Uris Active Directory User-name"
 Description: "ValueSet of all DGMC Hospitals Uris for Active Directory User-name"
 * insert ConformanceMetadata
-* ^url = $vsAdUser
+* ^url = $vsAdUserUri
 
 * $csHospUri#http://fhir.bmc.health.gov.il/identifier/ad-username "ברזילי - שם משתמש של המטפל"
 * $csHospUri#http://fhir.gmc.health.gov.il/identifier/ad-username "נהריה - שם משתמש של המטפל"

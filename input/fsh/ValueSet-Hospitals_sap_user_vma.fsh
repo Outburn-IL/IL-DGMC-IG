@@ -3,7 +3,7 @@ Id: hospitals-uris-sap-user-vma
 Title: "Hospitals Uris SAP User VMA"
 Description: "ValueSet of all DGMC Hospitals Uris for SAP User VMA"
 * insert ConformanceMetadata
-* ^url = $vsSapUserVma
+* ^url = $vsSapUserVmaUri
 
 * $csHospUri#http://fhir.bmc.health.gov.il/identifier/sap-user-vma "ברזילי - משתמש סאפ"
 * $csHospUri#http://fhir.gmc.health.gov.il/identifier/sap-user-vma "נהריה - משתמש סאפ"

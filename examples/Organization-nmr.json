@@ -4,7 +4,7 @@
     "meta": {
       "profile": [
         "http://fhir.health.gov.il/StructureDefinition/il-core-organization",
-        "http://fhir.dgmc.health.gov.il/StructureDefinition/dgmc-nmr-organization"
+        "http://fhir.dgmc.health.gov.il/StructureDefinition/dgmc-nmr-ou"
       ],
       "security": [
         {
@@ -16,11 +16,11 @@
     },
     "identifier": [
       {
-        "system": "http://fhir.shamir.health.gov.il/identifier/nmr-orgid-text",
+        "system": "http://fhir.shamir.health.gov.il/identifier/nmr-ou-text",
         "value": "ר-פנג"
       },
       {
-        "system": "http://fhir.shamir.health.gov.il/identifier/nmr-orgid-code",
+        "system": "http://fhir.shamir.health.gov.il/identifier/nmr-ou-code",
         "value": "I0013"
       },
       {
@@ -41,7 +41,7 @@
       {
         "coding": [
           {
-            "system": "http://fhir.dgmc.health.gov.il/cs/nmr-unit-type",
+            "system": "http://fhir.dgmc.health.gov.il/cs/nmr-ou-type",
             "code": "SI",
             "display": "יח. רפואית - אשפוז"
           }

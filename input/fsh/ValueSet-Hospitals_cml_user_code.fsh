@@ -3,7 +3,7 @@ Id: hospitals-uris-cml-user-code
 Title: "Hospitals Uris Chameleon User code"
 Description: "ValueSet of all DGMC Hospitals Uris for Chameleon User code"
 * insert ConformanceMetadata
-* ^url = $vsCmlUserCode
+* ^url = $vsCmlUserCodeUri
 
 * $csHospUri#http://fhir.bmc.health.gov.il/identifier/cml-user-code "ברזילי - קוד משתמש-קמיליון"
 * $csHospUri#http://fhir.gmc.health.gov.il/identifier/cml-user-code "נהריה - קוד משתמש-קמיליון"

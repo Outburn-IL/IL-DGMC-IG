@@ -11,13 +11,13 @@ Description: "Profile on IL-Core-Practitioner by DGMC"
     sap-user-vma 0..* and 
     cml-user-code 1..1
 * identifier[ad-user].system 1..1
-* identifier[ad-user].system from $vsAdUser
+* identifier[ad-user].system from $vsAdUserUri
 * identifier[ad-user].value 1..1
 * identifier[sap-user-vma].system 1..1
-* identifier[sap-user-vma].system from $vsSapUserVma
+* identifier[sap-user-vma].system from $vsSapUserVmaUri
 * identifier[sap-user-vma].value 1..1
 * identifier[cml-user-code].system 1..1
-* identifier[cml-user-code].system from $vsCmlUserCode
+* identifier[cml-user-code].system from $vsCmlUserCodeUri
 * identifier[cml-user-code].value 1..1
 * telecom ^slicing.discriminator.type = #value
 * telecom ^slicing.discriminator.path = "system"

@@ -2,7 +2,7 @@ Profile: DgmcRoomLocation
 Parent: il-core-location
 Id: dgmc-room-location
 Title: "DGMC Room Location"
-Description: "Profile of DGMC Room Location from Chameleon"
+Description: "Profile of DGMC Room Location"
 * insert ConformanceMetadata
 
 * id 1..1
@@ -33,4 +33,4 @@ Description: "Profile of DGMC Room Location from Chameleon"
 * address.extension[dar].valueCode = #unknown
 
 * partOf.reference 1..1
-* partOf only Reference(DgmcUnitLocation)
+* partOf only Reference(DgmcOuLocation)

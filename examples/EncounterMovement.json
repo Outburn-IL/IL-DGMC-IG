@@ -63,7 +63,7 @@
       "location": {
         "reference": "Location/LOC.10013",
         "identifier": {
-          "system": "http://fhir.shamir.health.gov.il/identifier/nmr-orgid-text",
+          "system": "http://fhir.shamir.health.gov.il/identifier/nmr-ou-text",
           "value": "פנ-ג"
         }
       }
@@ -72,7 +72,7 @@
   "serviceProvider": {
     "reference": "Organization/ORG.10013",
     "identifier": {
-      "system": "http://fhir.shamir.health.gov.il/identifier/nmr-orgid-text",
+      "system": "http://fhir.shamir.health.gov.il/identifier/nmr-ou-text",
       "value": "רפנ-ג"
     }
   },

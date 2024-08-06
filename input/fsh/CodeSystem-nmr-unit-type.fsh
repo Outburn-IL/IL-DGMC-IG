@@ -1,9 +1,9 @@
-CodeSystem: NmrUnitType
-Id: nmr-unit-type
-Title: "Nmr Unit Type"
-Description: "Namer Unit Type"
+CodeSystem: NmrOuType
+Id: nmr-ou-type
+Title: "Nmr OU Type"
+Description: "Namer Organizational Unit Type"
 * insert ConformanceMetadata
-* ^url = $csNmrUnitType
+* ^url = $csNmrOuType
 
 * #AC "מוקדי זימונים"
 * #AD "יח. רפ. אדמיניסטרציה"
@@ -13,8 +13,7 @@ Description: "Namer Unit Type"
 * #HO "בית חולים"
 * #L  "Departmental LAB"
 * #LB "LAB"
-* #OC "OC-חדר ניתוח"
-* #OO "OO-חדר ניתוח"
+* #OC "חדר ניתוח"
 * #OP "חדר ניתוח - מחלקתי"
 * #RD "אגף בארכיון"
 * #SE "יח. רפואית - מלר\"ד"

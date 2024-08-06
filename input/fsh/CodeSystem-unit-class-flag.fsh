@@ -1,9 +1,9 @@
-CodeSystem: UnitClassFlag
-Id: unit-class-flag
-Title: "Unit Classification Flag"
-Description: "Unit Classification Flag Codes"
+CodeSystem: OuClassFlag
+Id: ou-class-flag
+Title: "OU Classification Flag"
+Description: "Organizational Unit Classification Flag Codes"
 * insert ConformanceMetadata
-* ^url = $csUnitClassFlag
+* ^url = $csOuClassFlag
 
 * #surg "יחידה מנתחת"
 * #consult "יחידה מייעצת"

@@ -1,8 +1,8 @@
-ValueSet: NmrUnitType
-Id: nmr-unit-type
-Title: "Nmr Unit Type"
-Description: "Namer Unit Type"
+ValueSet: NmrOuType
+Id: nmr-ou-type
+Title: "Nmr OU Type"
+Description: "Namer Organizational Unit Type"
 * insert ConformanceMetadata
-* ^url = $vsNmrUnitType
-* include codes from system $csNmrUnitType
+* ^url = $vsNmrOuType
+* include codes from system $csNmrOuType
 

@@ -63,7 +63,7 @@
       "location": {
         "reference": "Location/BED.060",
         "identifier": {
-          "system": "http://fhir.shamir.health.gov.il/identifier/cml-unit-identfier",
+          "system": "http://fhir.shamir.health.gov.il/identifier/cml-ou-identfier",
           "value": "060"
         }
       },

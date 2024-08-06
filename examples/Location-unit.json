@@ -4,7 +4,7 @@
     "meta": {
       "profile": [
         "http://fhir.health.gov.il/StructureDefinition/il-core-location",
-        "http://fhir.dgmc.health.gov.il/StructureDefinition/dgmc-unit-location"
+        "http://fhir.dgmc.health.gov.il/StructureDefinition/dgmc-ou-location"
       ],
       "security": [
         {
@@ -14,22 +14,22 @@
         },
         {
           "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
-          "code": "PSY",
-          "display": "psychiatry "
+          "code": "R",
+          "display": "restricted"
         }
       ]
     },
     "identifier": [
       {
-        "system": "http://fhir.shamir.health.gov.il/identifier/nmr-orgid-text",
+        "system": "http://fhir.shamir.health.gov.il/identifier/nmr-ou-text",
         "value": "פנ-ג"
       },
       {
-        "system": "http://fhir.shamir.health.gov.il/identifier/nmr-orgid-code",
+        "system": "http://fhir.shamir.health.gov.il/identifier/nmr-ou-code",
         "value": "10013"
       },
       {
-        "system": "http://fhir.shamir.health.gov.il/identifier/cml-unit-code",
+        "system": "http://fhir.shamir.health.gov.il/identifier/cml-ou-code",
         "value": "2"
       }
     ],
@@ -52,7 +52,7 @@
       {
         "coding": [
           {
-            "system": "http://fhir.dgmc.health.gov.il/cs/nmr-unit-type",
+            "system": "http://fhir.dgmc.health.gov.il/cs/nmr-ou-type",
             "code": "WI",
             "display": "מיקום פיזי - אשפוז"
           }

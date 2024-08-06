@@ -35,11 +35,11 @@ Description: "DGMC Encounter Namer Movement"
 * location.location.reference 1..1
 * location.location.identifier 1..1
 * location.location.identifier.system 1..1
-* location.location.identifier.system from $vsNmrOrgidTextUri (required)
+* location.location.identifier.system from $vsNmrOuTextUri (required)
 * location.location.identifier.value 1..1
 * serviceProvider.reference 1..1
 * serviceProvider.identifier 1..1
 * serviceProvider.identifier.system 1..1
-* serviceProvider.identifier.system from $vsNmrOrgidTextUri (required)
+* serviceProvider.identifier.system from $vsNmrOuTextUri (required)
 * serviceProvider.identifier.value 1..1
 * partOf.reference 1..1

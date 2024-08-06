@@ -2,7 +2,7 @@ Profile: DgmcHospitalLocation
 Parent: il-core-location
 Id: dgmc-hospital-location
 Title: "DGMC Hospital Location"
-Description: "Profile of DGMC Hospital Location from Chameleon"
+Description: "Profile of DGMC Hospital Location"
 * insert ConformanceMetadata
 
 
@@ -40,7 +40,7 @@ Description: "Profile of DGMC Hospital Location from Chameleon"
 * type[hosp].coding.display 1..1
 * type[hosp].coding.display = "Hospital" (exactly)
 
-* type[hosp-loc] = http://fhir.dgmc.health.gov.il/cs/nmr-unit-type#HO
+* type[hosp-loc] = http://fhir.dgmc.health.gov.il/cs/nmr-ou-type#HO
 * type[hosp-loc].coding.display 1..1
 * type[hosp-loc].coding.display = "בית חולים" (exactly)
 

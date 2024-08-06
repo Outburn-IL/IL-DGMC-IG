@@ -1,8 +1,8 @@
-Profile: DgmcUnitLocation
+Profile: DgmcOuLocation
 Parent: il-core-location
-Id: dgmc-unit-location
-Title: "DGMC Unit Location"
-Description: "Profile of DGMC Unit Location from Chameleon"
+Id: dgmc-ou-location
+Title: "DGMC OU Location"
+Description: "Profile of DGMC Organizational Unit Location"
 * insert ConformanceMetadata
 
 * id 1..1
@@ -13,20 +13,20 @@ Description: "Profile of DGMC Unit Location from Chameleon"
   * ^slicing.rules = #open
   * ^slicing.ordered = false
 
-* identifier contains nmr-orgid-text 1..1 
-* identifier[nmr-orgid-text].system 1..1
-* identifier[nmr-orgid-text].system from $vsNmrOrgidTextUri (required)
-* identifier[nmr-orgid-text].value 1..1 
+* identifier contains nmr-ou-text 1..1 
+* identifier[nmr-ou-text].system 1..1
+* identifier[nmr-ou-text].system from $vsNmrOuTextUri (required)
+* identifier[nmr-ou-text].value 1..1 
 
-* identifier contains nmr-orgid-code 1..1 
-* identifier[nmr-orgid-code].system 1..1
-* identifier[nmr-orgid-code].system from $vsNmrOrgidCodeUri (required)
-* identifier[nmr-orgid-code].value 1..1 
+* identifier contains nmr-ou-code 1..1 
+* identifier[nmr-ou-code].system 1..1
+* identifier[nmr-ou-code].system from $vsNmrOuCodeUri (required)
+* identifier[nmr-ou-code].value 1..1 
 
-* identifier contains cml-unit-code 1..1 
-* identifier[cml-unit-code].system 1..1
-* identifier[cml-unit-code].system from $vsCmlUnitCodeUri (required)
-* identifier[cml-unit-code].value 1..1 
+* identifier contains cml-ou-code 1..1 
+* identifier[cml-ou-code].system 1..1
+* identifier[cml-ou-code].system from $vsCmlOuCodeUri (required)
+* identifier[cml-ou-code].value 1..1 
 
 * status 1..1
 * alias 1..1
@@ -40,16 +40,16 @@ Description: "Profile of DGMC Unit Location from Chameleon"
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #closed
   * ^slicing.ordered = false
-* type contains unit 1..1 and nmr-unit-type 1..1
+* type contains unit 1..1 and nmr-ou-type 1..1
 
 * type[unit] = http://terminology.hl7.org/CodeSystem/v3-RoleCode#HU
 * type[unit].coding.display 1..1
 * type[unit].coding.display = "Hospital unit"
 
-* type[nmr-unit-type] from $vsNmrUnitType (required)
-* type[nmr-unit-type].coding.system 1..1
-* type[nmr-unit-type].coding.code 1..1
-* type[nmr-unit-type].coding.display 1..1
+* type[nmr-ou-type] from $vsNmrOuType (required)
+* type[nmr-ou-type].coding.system 1..1
+* type[nmr-ou-type].coding.code 1..1
+* type[nmr-ou-type].coding.display 1..1
 
 * physicalType 1..1
 * physicalType.coding 1..1
