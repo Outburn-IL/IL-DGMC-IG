@@ -14,14 +14,14 @@ Description: "DGMC Consultation Request"
 * category[il-core] 0..0
 * category 1..1
 ///TEST//
-* category[consult] = $sct#409063005 "Counseling (procedure)"
+* category[consult] = $sct#409063005 "Counseling"
 
-// * category[consult].coding = $sct#409063005 "Counseling (procedure)" (exactly)
+// * category[consult].coding = $sct#409063005 "Counseling" (exactly)
 // * category[consult].coding 1..1
 // * category[consult].coding.display 1..1
 
-* code.coding ^slicing.discriminator.type = #pattern
-* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.discriminator.type = #value
+* code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #closed
 * code.coding ^slicing.ordered = false
 * code.coding 2..2
@@ -29,9 +29,11 @@ Description: "DGMC Consultation Request"
 * code.coding.code 1..1
 * code.coding.display 1..1
 * code.coding contains cons 1..1 and cons-type 1..1
-* code.coding[cons] = $sct#11429006
+* code.coding[cons].system = $sct (exactly)
+* code.coding[cons].code = #11429006 (exactly)
 * code.coding[cons].display = "Consultation" (exactly)
-* code.coding[cons-type] from $vsCmlConsultType
+* code.coding[cons-type] from $vsCmlConsultType (required)
+* code.coding[cons-type].system = $csCmlConsultType (exactly)
 
 * orderDetail ^slicing.discriminator.type = #exists
 * orderDetail ^slicing.discriminator.path = "$this.coding"

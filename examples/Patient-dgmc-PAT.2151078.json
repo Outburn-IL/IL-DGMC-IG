@@ -1,0 +1,103 @@
+{
+  "resourceType": "Patient",
+  "id": "PAT.2151078",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-patient",
+      "http://fhir.dgmc.health.gov.il/StructureDefinition/dgmc-patient"
+    ],
+    "lastUpdated": "2024-11-17T11:47:52Z",
+    "versionId": "1"
+  },
+  "extension": [
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-il-hmo",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.health.gov.il/cs/paying-entity-moh",
+            "code": "103",
+            "display": "קופת חולים מכבי"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://fhir.b-zion.health.gov.il/identifier/nmr-pat-int-num",
+      "value": "2151078"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/language",
+          "valueCode": "he"
+        }
+      ],
+      "family": "אלמוני-2151078",
+      "given": [
+        "פלוני-2151078"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1974-11-12",
+  "_birthDate": {
+    "extension": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/ext-hebrew-date",
+        "extension": [
+          {
+            "url": "display",
+            "valueString": "כו מרחשון התשלה"
+          }
+        ]
+      }
+    ]
+  },
+  "deceasedBoolean": false,
+  "address": [
+    {
+      "_city": {
+        "extension": [
+          {
+            "url": "http://fhir.health.gov.il/StructureDefinition/ext-city-code",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://fhir.health.gov.il/cs/city-symbol",
+                  "code": "7900",
+                  "display": "פתח תקווה"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "maritalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "code": "M"
+      }
+    ]
+  },
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "system": "urn:ietf:bcp:47",
+            "code": "he"
+          }
+        ]
+      }
+    }
+  ]
+}

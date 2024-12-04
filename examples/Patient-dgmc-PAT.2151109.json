@@ -1,0 +1,244 @@
+{
+    "resourceType": "Patient",
+    "id": "PAT.2151109",
+    "meta": {
+      "profile": [
+        "http://fhir.health.gov.il/StructureDefinition/il-core-patient",
+        "http://fhir.dgmc.health.gov.il/StructureDefinition/dgmc-patient"
+      ],
+      "security": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code": "HTEST",
+          "display": "test health data"
+        }
+      ],
+      "lastUpdated": "2024-11-26T09:27:59Z",
+      "versionId": "1"
+    },
+    "extension": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/ext-il-hmo",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.health.gov.il/cs/paying-entity-moh",
+              "code": "101",
+              "display": "קופת חולים כללית"
+            },
+            {
+              "system": "http://fhir.dgmc.health.gov.il/cs/nmr-hmo-code",
+              "code": "10",
+              "display": "כללית"
+            }
+          ]
+        }
+      },
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/ext-patient-immigration",
+        "extension": [
+          {
+            "url": "date",
+            "valueDate": "2024-01-02"
+          }
+        ]
+      },
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/ext-administrative-parent-name",
+        "extension": [
+          {
+            "url": "role",
+            "valueCode": "FTH"
+          },
+          {
+            "url": "given",
+            "valueString": "גבי"
+          }
+        ]
+      },
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/ext-administrative-parent-name",
+        "extension": [
+          {
+            "url": "role",
+            "valueCode": "MTH"
+          },
+          {
+            "url": "given",
+            "valueString": "ריקי"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "country": "AD"
+        }
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-disability",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "15188001",
+              "display": "Hearing loss"
+            }
+          ],
+          "text": "כבד שמיעה"
+        }
+      }
+    ],
+    "identifier": [
+      {
+        "system": "http://fhir.health.gov.il/identifier/il-national-id",
+        "value": "999268535"
+      },
+      {
+        "system": "http://fhir.b-zion.health.gov.il/identifier/nmr-pat-int-num",
+        "value": "2151109"
+      },
+      {
+        "system": "http://fhir.b-zion.health.gov.il/identifier/cml-pat-int-num",
+        "value": "671047"
+      },
+      {
+        "system": "http://fhir.health.gov.il/identifier/idf-service-number",
+        "value": "5767255"
+      },
+      {
+        "system": "http://fhir.health.gov.il/identifier/il-prisoner-number",
+        "value": "150489"
+      },
+      {
+        "system": "http://fhir.b-zion.health.gov.il/identifier/nmr-pat-tmp-num",
+        "value": "Z2151109"
+      }
+    ],
+    "active": true,
+    "name": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/language",
+            "valueCode": "he"
+          }
+        ],
+        "family": "בדיקה",
+        "given": [
+          "חדש"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/language",
+            "valueCode": "en"
+          }
+        ],
+        "family": "CHECK",
+        "given": [
+          "NEA"
+        ]
+      }
+    ],
+    "telecom": [
+      {
+        "system": "phone",
+        "value": "052-7903349",
+        "rank": 1
+      },
+      {
+        "system": "phone",
+        "value": "059-8974523",
+        "rank": 2
+      },
+      {
+        "system": "email",
+        "value": "GMAIL@GMAIL.COM"
+      }
+    ],
+    "gender": "male",
+    "birthDate": "2004-02-17",
+    "_birthDate": {
+      "extension": [
+        {
+          "url": "http://fhir.health.gov.il/StructureDefinition/ext-hebrew-date",
+          "extension": [
+            {
+              "url": "display",
+              "valueString": "יב אב התשנא"
+            }
+          ]
+        }
+      ]
+    },
+    "deceasedBoolean": false,
+    "address": [
+      {
+        "line": [
+          "[none]"
+        ],
+        "_line": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                "valueString": "אימבר 1 פתח תקווה"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                "valueString": "1"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix",
+                "valueString": "ב"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID",
+                "valueString": "15"
+              }
+            ]
+          }
+        ],
+        "_city": {
+          "extension": [
+            {
+              "url": "http://fhir.health.gov.il/StructureDefinition/ext-city-code",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://fhir.health.gov.il/cs/city-symbol",
+                    "code": "7900",
+                    "display": "פתח תקווה"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "postalCode": "4951135",
+        "country": "IL"
+      }
+    ],
+    "maritalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M"
+        }
+      ]
+    },
+    "communication": [
+      {
+        "language": {
+          "coding": [
+            {
+             "system": "urn:ietf:bcp:47",
+             "code": "he"
+            }
+          ]
+        }
+      }
+    ]
+  }

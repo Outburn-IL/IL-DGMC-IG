@@ -21,7 +21,7 @@
         {
           "system": "http://snomed.info/sct",
           "code": "409063005",
-          "display": "Counseling (procedure)"
+          "display": "Counseling"
         }
       ]
     }
@@ -35,7 +35,7 @@
         "display": "Consultation"
       },
       {
-        "system": "http://fhir.dgmc.health.gov.il/cs/cml-counseling-type",
+        "system": "http://fhir.dgmc.health.gov.il/cs/cml-consultation-type",
         "code": "1",
         "display": "הזמנת יעוץ מתוך ביה\"ח"
       }

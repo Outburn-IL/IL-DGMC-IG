@@ -1,0 +1,95 @@
+{
+    "resourceType": "ServiceRequest",
+    "id": "CONSREQ.637757",
+    "meta": {
+      "profile": [
+        "http://fhir.health.gov.il/StructureDefinition/il-core-service-request",
+        "http://fhir.dgmc.health.gov.il/StructureDefinition/dgmc-cml-consultation-request"
+      ]
+    },
+    "identifier": [
+      {
+        "system": "http://fhir.b-zion.health.gov.il/identifier/cml-counseling-request",
+        "value": "637757"
+      }
+    ],
+    "status": "active",
+    "intent": "order",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "409063005",
+            "display": "Counseling"
+          }
+        ]
+      }
+    ],
+    "priority": "stat",
+    "code": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "11429006",
+          "display": "Consultation"
+        },
+        {
+          "system": "http://fhir.dgmc.health.gov.il/cs/cml-consultation-type",
+          "code": "1",
+          "display": "הזמנת יעוץ מתוך ביה\"ח"
+        }
+      ]
+    },
+    "orderDetail": [
+      {
+        "extension": [
+          {
+            "url": "http://fhir.dgmc.health.gov.il/StructureDefinition/consultation-question-flag",
+            "valueBoolean": true
+          }
+        ],
+        "text": "השאלה ליועץ"
+      },
+      {
+        "coding": [
+          {
+            "system": "http://fhir.dgmc.health.gov.il/cs/cml-counseling-patient-state",
+            "code": "2",
+            "display": "על כסא גלגלים"
+          }
+        ]
+      }
+    ],
+    "subject": {
+      "reference": "Patient/PAT.0"
+    },
+    "encounter": {
+      "reference": "Encounter/CML.1886187"
+    },
+    "occurrenceDateTime": "2024-12-01T00:00:00Z",
+    "authoredOn": "2024-12-01T10:58:25.78+02:00",
+    "requester": {
+      "reference": "Practitioner/CML.9814"
+    },
+    "performer": [
+      {
+        "reference": "Organization/ORG.CML150685840",
+        "type": "Organization"
+      },
+      {
+        "reference": "Practitioner/CML.7483",
+        "type": "Practitioner"
+      }
+    ],
+    "reasonCode": [
+      {
+        "text": "הגדרת הבעיה"
+      }
+    ],
+    "note": [
+      {
+        "text": "מטופל FHIR"
+      }
+    ]
+  }

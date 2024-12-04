@@ -22,7 +22,7 @@ Alias: $csHomeCheckIn =     http://fhir.dgmc.health.gov.il/cs/home-check-in
 Alias: $csCmlMedRecType =   http://fhir.dgmc.health.gov.il/cs/cml-medical-record-type 		
 Alias: $csHospUri =         http://fhir.dgmc.health.gov.il/cs/hospitals-uri
 Alias: $csPatVisitorTy =    http://fhir.dgmc.health.gov.il/cs/patient-visitor-type
-Alias: $csCmlConsultType =  http://fhir.dgmc.health.gov.il/cs/cml-counseling-type
+Alias: $csCmlConsultType =  http://fhir.dgmc.health.gov.il/cs/cml-consultation-type
 Alias: $csOuClassFlag =     http://fhir.dgmc.health.gov.il/cs/ou-classification-flag
 Alias: $csNmrOuType =       http://fhir.dgmc.health.gov.il/cs/nmr-ou-type
 Alias: $csNmrHmoCode =      http://fhir.dgmc.health.gov.il/cs/nmr-hmo-code
@@ -55,7 +55,7 @@ Alias: $vsCmlRoomIdUri =                http://fhir.dgmc.health.gov.il/ValueSet/
 // Alias: $vsAllergyIntCodeMedUri =        http://fhir.dgmc.health.gov.il/ValueSet/allergy-int-code-med-uri
 
 Alias: $vsAdmType =             http://fhir.dgmc.health.gov.il/ValueSet/admission-type
-Alias: $vsCmlConsultType =      http://fhir.dgmc.health.gov.il/ValueSet/cml-counseling-type
+Alias: $vsCmlConsultType =      http://fhir.dgmc.health.gov.il/ValueSet/cml-consultation-type
 Alias: $vsCmlMedRecType =       http://fhir.dgmc.health.gov.il/ValueSet/cml-medical-record-type 		
 Alias: $vsConsultPatState =     http://fhir.dgmc.health.gov.il/ValueSet/cml-counseling-patient-state
 Alias: $vsPatVisitorTy =        http://fhir.dgmc.health.gov.il/ValueSet/patient-visitor-type
