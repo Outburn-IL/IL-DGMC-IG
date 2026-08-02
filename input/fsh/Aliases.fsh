@@ -87,6 +87,7 @@ Alias: $vsManualMonitorIdentifiers =    http://fhir.dgmc.health.gov.il/ValueSet/
 Alias: $vsCmlMedRecUri =                http://fhir.dgmc.health.gov.il/ValueSet/cml-medical-record-uri
 Alias: $vsCmlHospCodeUri =              http://fhir.dgmc.health.gov.il/ValueSet/cml-hosp-code-uri
 Alias: $vsCmlOuCodeUri =                http://fhir.dgmc.health.gov.il/ValueSet/cml-ou-code-uri
+Alias: $vsPractitionerRoleUri =         http://fhir.dgmc.health.gov.il/ValueSet/practitioner-role-uri
 Alias: $vsCmlParameters =               http://fhir.dgmc.health.gov.il/ValueSet/cml-parameters
 Alias: $vsNmrOuTextUri =                http://fhir.dgmc.health.gov.il/ValueSet/nmr-ou-text-uri
 Alias: $vsNmrOuCodeUri =                http://fhir.dgmc.health.gov.il/ValueSet/nmr-ou-code-uri
