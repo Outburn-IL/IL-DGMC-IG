@@ -10,8 +10,14 @@ Description: "DGMC Medication Statement for Medications"
 * extension contains $ext-med-started-pregnancy-week named medicationStartedPregnancyWeek 0..1
 
 * identifier 1..1
-* identifier.system 1..1
-* identifier.value 1..1
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
+* identifier contains cml-med-statement 1..1
+* identifier[cml-med-statement].system 1..1
+* identifier[cml-med-statement].system from $vsCmlMedicationStatementUri (required)
+* identifier[cml-med-statement].value 1..1
 
 * category.coding.system = "http://fhir.health.gov.il/ValueSet/il-core-medication-statement-category"
 
