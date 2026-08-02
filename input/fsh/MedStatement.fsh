@@ -1,15 +1,13 @@
 Profile: DGMCMedStatement
 Parent: il-hdp-medication-statement
-Id: dgmc-med-statement-chronic
+Id: dgmc-med-statement
 Title: "DGMC Medication Statement"
-Description: "DGMC Medication Statement for Chronic Medications"
+Description: "DGMC Medication Statement for Medications"
 * insert ConformanceMetadata
 
 * id 1..1
 
-* extension[courseOfTherapyType].valueCodeableConcept.coding.system = "http://fhir.health.gov.il/cs/il-core-medication-course-of-therapy-type"
-* extension[courseOfTherapyType].valueCodeableConcept.coding.code = #chronic
-* extension[courseOfTherapyType].valueCodeableConcept.coding.display = "Chronic therapy"
+* extension contains $ext-med-started-pregnancy-week named medicationStartedPregnancyWeek 0..1
 
 * identifier 1..1
 * identifier.system 1..1

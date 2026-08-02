@@ -24,6 +24,7 @@ Alias: $ext-med-confirmed-by =        http://fhir.dgmc.health.gov.il/StructureDe
 Alias: $ext-med-total-daily-dose =    http://fhir.dgmc.health.gov.il/StructureDefinition/ext-medication-total-daily-dose
 Alias: $ext-med-order-type =          http://fhir.dgmc.health.gov.il/StructureDefinition/ext-medication-order-type
 Alias: $ext-med-order-protocol-desc = http://fhir.dgmc.health.gov.il/StructureDefinition/ext-medication-order-protocol-desc
+Alias: $ext-med-started-pregnancy-week = http://fhir.dgmc.health.gov.il/StructureDefinition/ext-medication-started-pregnancy-week
 
 
 // CodeSystems
