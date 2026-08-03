@@ -1,0 +1,118 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "CML.MED.PRESCRIPTION.5479776-768130",
+  "meta": {
+    "profile": [
+      "http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-request",
+      "http://fhir.dgmc.health.gov.il/StructureDefinition/dgmc-perscription"
+    ],
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "medications",
+        "display": "תרופות"
+      }
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.b-zion.health.gov.il/identifier/cml-med-prescription",
+      "value": "5479776-768130"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://fhir.health.gov.il/cs/il-core-medication-request-category",
+          "code": "community-hmo",
+          "display": "Community Care/HMO"
+        }
+      ]
+    }
+  ],
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://fhir.b-zion.health.gov.il/cs/cml-internal-drug-code",
+        "code": "1234",
+        "display": "drug-example-int",
+        "userSelected": true
+      },
+      {
+        "system": "http://fhir.b-zion.health.gov.il/cs/cml-external-drug-code",
+        "code": "5678",
+        "display": "drug-example-ext",
+        "userSelected": false
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "387517004",
+        "display": "Paracetamol"
+      }
+    ],
+    "text": "drug-example-int"
+  },
+  "subject": {
+    "reference": "Patient/PAT.123"
+  },
+  "encounter": {
+    "reference": "Encounter/CML.321"
+  },
+  "authoredOn": "2026-01-12",
+  "requester": {
+    "reference": "Practitioner/CML.123456"
+  },
+  "recorder": {
+    "reference": "Practitioner/CML.1238889"
+  },
+  "performer": {
+    "reference": "Patient/PAT.123",
+    "type": "Patient"
+  },
+  "groupIdentifier": {
+    "system": "http://fhir.b-zion.health.gov.il/identifier/cml-prescription-group",
+    "value": "5479776"
+  },
+  "courseOfTherapyType": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+        "code": "acute",
+        "display": "Short course (acute) therapy"
+      }
+    ]
+  },
+  "dosageInstruction": [
+    {
+      "text": "PO GALVUS 50 mg X2 Per Day, Every Day, 08:00 50 mg, 20:00 50 mg",
+      "route": {
+        "coding": [
+          {
+            "code": "26643006",
+            "system": "http://snomed.info/sct",
+            "display": "Oral route"
+          },
+          {
+            "code": "101",
+            "system": "http://fhir.b-zion.health.gov.il/cs/cml-med-route-code",
+            "display": "Oral"
+          }
+        ],
+        "text": "Oral"
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 50,
+            "unit": "milligram",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg"
+          }
+        }
+      ]
+    }
+  ]
+}
