@@ -9,6 +9,8 @@ Description: "DGMC Medication Statement for Medications"
 
 * extension contains $ext-med-started-pregnancy-week named medicationStartedPregnancyWeek 0..1
 
+* extension[courseOfTherapyType].valueCodeableConcept from $vsMedCourseOfTherapyType (required)
+
 * identifier 1..1
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
