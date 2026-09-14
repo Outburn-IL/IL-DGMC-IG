@@ -25,6 +25,8 @@ Alias: $ext-med-total-daily-dose =    http://fhir.dgmc.health.gov.il/StructureDe
 Alias: $ext-med-order-type =          http://fhir.dgmc.health.gov.il/StructureDefinition/ext-medication-order-type
 Alias: $ext-med-order-protocol-desc = http://fhir.dgmc.health.gov.il/StructureDefinition/ext-medication-order-protocol-desc
 Alias: $ext-med-started-pregnancy-week = http://fhir.dgmc.health.gov.il/StructureDefinition/ext-medication-started-pregnancy-week
+Alias: $ext-related-responsibility-scope = http://fhir.dgmc.health.gov.il/StructureDefinition/ext-related-responsibility-scope
+Alias: $ext-related-relationship-type = http://fhir.dgmc.health.gov.il/StructureDefinition/ext-related-relationship-type
 
 
 // CodeSystems
@@ -40,6 +42,8 @@ Alias: $csCmlMedRecType =      http://fhir.dgmc.health.gov.il/cs/cml-medical-rec
 Alias: $csCmlParametersCategory = http://fhir.dgmc.health.gov.il/cs/cml-parameters-category
 Alias: $csHospUri =            http://fhir.dgmc.health.gov.il/cs/hospitals-uri
 Alias: $csMedCourseOfTherapyType = http://fhir.dgmc.health.gov.il/cs/dgmc-med-course-of-therapy-type
+Alias: $csRelatedResponsibilityScope = http://fhir.dgmc.health.gov.il/cs/nmr-related-responsibility-scope
+Alias: $csRelatedRelationshipType = http://fhir.dgmc.health.gov.il/cs/nmr-related-relationship-type
 Alias: $csPatVisitorTy =       http://fhir.dgmc.health.gov.il/cs/patient-visitor-type
 Alias: $csCmlConsultType =     http://fhir.dgmc.health.gov.il/cs/cml-consultation-type
 Alias: $csOuClassFlag =        http://fhir.dgmc.health.gov.il/cs/ou-classification-flag
@@ -80,6 +84,8 @@ Alias: $vsSapUserVmaUri =               http://fhir.dgmc.health.gov.il/ValueSet/
 Alias: $vsCmlUserCodeUri =              http://fhir.dgmc.health.gov.il/ValueSet/cml-user-code-uri
 Alias: $vsMedCourseOfTherapyType = http://fhir.dgmc.health.gov.il/ValueSet/dgmc-med-course-of-therapy-type
 Alias: $vsIlCoreMedCourseOfTherapyType = http://fhir.health.gov.il/ValueSet/il-core-medication-course-of-therapy-type
+Alias: $vsRelatedResponsibilityScope = http://fhir.dgmc.health.gov.il/ValueSet/nmr-related-responsibility-scope
+Alias: $vsRelatedRelationshipType = http://fhir.dgmc.health.gov.il/ValueSet/nmr-related-relationship-type
 Alias: $vsAdUserUri =                   http://fhir.dgmc.health.gov.il/ValueSet/ad-username-uri
 Alias: $vsNmrCaseIdUri =                http://fhir.dgmc.health.gov.il/ValueSet/nmr-case-number-uri
 Alias: $vsDietPrefUri =                 http://fhir.dgmc.health.gov.il/ValueSet/encounter-diet-pref-uri
