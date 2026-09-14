@@ -1,19 +1,25 @@
-Profile: DGMCMedStatementChronic
+Profile: DGMCMedStatement
 Parent: il-hdp-medication-statement
-Id: dgmc-med-statement-chronic
-Title: "DGMC Medication Statement Chronic"
-Description: "DGMC Medication Statement for Chronic Medications"
+Id: dgmc-med-statement
+Title: "DGMC Medication Statement"
+Description: "DGMC Medication Statement for Medications"
 * insert ConformanceMetadata
 
 * id 1..1
 
-* extension[courseOfTherapyType].valueCodeableConcept.coding.system = "http://fhir.health.gov.il/cs/il-core-medication-course-of-therapy-type"
-* extension[courseOfTherapyType].valueCodeableConcept.coding.code = #chronic
-* extension[courseOfTherapyType].valueCodeableConcept.coding.display = "Chronic therapy"
+* extension contains $ext-med-started-pregnancy-week named medicationStartedPregnancyWeek 0..1
+
+* extension[courseOfTherapyType].valueCodeableConcept from $vsMedCourseOfTherapyType (required)
 
 * identifier 1..1
-* identifier.system 1..1
-* identifier.value 1..1
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
+* identifier contains cml-med-statement 1..1
+* identifier[cml-med-statement].system 1..1
+* identifier[cml-med-statement].system from $vsCmlMedicationStatementUri (required)
+* identifier[cml-med-statement].value 1..1
 
 * category.coding.system = "http://fhir.health.gov.il/ValueSet/il-core-medication-statement-category"
 

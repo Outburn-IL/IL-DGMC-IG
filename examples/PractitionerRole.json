@@ -18,6 +18,10 @@
       {
         "system": "http://practitioners.health.gov.il/Practitioners",
         "value": "CML.7350.150685840"
+      },
+      {
+        "system": "http://fhir.b-zion.health.gov.il/identifier/practitioner-role",
+        "value": "150685840"
       }
     ],
     "active": true,

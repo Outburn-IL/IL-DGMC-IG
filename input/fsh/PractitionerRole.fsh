@@ -4,6 +4,14 @@ Id: dgmc-practitioner-role
 Title: "DGMC Practitioner Role"
 Description: "Profile on IL-Core-PractitionerRole by DGMC"
 * insert ConformanceMetadata
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
+* identifier contains prac-role 1..1
+* identifier[prac-role].system 1..1
+* identifier[prac-role].system from $vsPractitionerRoleUri (required)
+* identifier[prac-role].value 1..1
 * extension contains ext-permission named Permission 0..1
 * extension[Permission].url 1..1
 * extension[Permission].url = $ext-permission (exactly)

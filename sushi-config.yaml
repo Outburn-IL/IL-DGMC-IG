@@ -10,7 +10,7 @@ title: Israel Division of Governmental Hospitals Profiles
 description: FHIR Profiles and Implementation Guide for the Israel Division of 
   Governmental Hospitals
 status: draft # draft | active | retired | unknown
-version: 0.9.4
+version: 0.10.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
